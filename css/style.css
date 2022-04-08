@@ -1,0 +1,118 @@
+:root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Functions and mixins */
+.rainbow p:nth-child(1) {
+  background-color: #6f42c1 !important;
+}
+
+.rainbow p:nth-child(2) {
+  background-color: #0dcaf0 !important;
+}
+
+.rainbow p:nth-child(3) {
+  background-color: #198754 !important;
+}
+
+.rainbow p:nth-child(4) {
+  background-color: #ffc107 !important;
+}
+
+.rainbow p:nth-child(5) {
+  background-color: #fd7e14 !important;
+}
+
+.rainbow p:nth-child(6) {
+  background-color: #dc3545 !important;
+}
+
+body {
+  background-color: #292a2b;
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  p {
+    color: #6f42c1;
+    background-color: #d63384;
+    padding: 1em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  p {
+    color: #292a2b;
+    background-color: #ffc107;
+    padding: 1em;
+  }
+}
+
+.main {
+  background-color: #198754;
+}
+
+.main h1 {
+  font-size: 2.5rem;
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.main-paragraph {
+  color: #fff;
+}
+
+.main p + p {
+  font-size: 0.785rem;
+  background-color: #0d6efd;
+}
+
+.message, .rainbow p:nth-child(1), .rainbow p:nth-child(2), .rainbow p:nth-child(3), .rainbow p:nth-child(4), .rainbow p:nth-child(5), .rainbow p:nth-child(6), .message-info, .message-danger {
+  padding: 0.8em 1.5em;
+  border-radius: 1rem;
+  width: 70%;
+  margin: 1em auto;
+}
+
+.message-info {
+  color: #fff;
+  background-color: #0d6efd;
+}
+
+.message-danger {
+  color: #fff;
+  background-color: #dc3545;
+}
+
+#header {
+  background-color: #6f42c1;
+  padding: 2em;
+}
+
+#header .navigation {
+  color: #fff;
+}
+
+#header .navigation ul {
+  list-style-type: none;
+}
+
+#header .navigation ul li.active {
+  color: #d63384;
+  font-weight: 700;
+}
+
+#header .navigation ul li.active:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */
